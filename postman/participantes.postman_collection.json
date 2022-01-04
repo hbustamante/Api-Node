@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "22396d3d-32c5-43a1-a85f-c629b0eb679c",
+		"name": "Node - Inadaptados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios - GET",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Participantes - GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8088/api/participantes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"participantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eventos - GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8088/api/eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eventos Por Participante - GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8088/api/eventos/participante/61d3c24098d32a1bd0e554ed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"eventos",
+						"participante",
+						"61d3c24098d32a1bd0e554ed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eventos Por Id- GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8088/api/eventos/61d3cb41c8a9f60468ddd36f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"eventos",
+						"61d3cb41c8a9f60468ddd36f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eventos Por Participante - GET Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MWQxNTA3MTdjOWRjOTQ2YWNkNTRlZGYiLCJpYXQiOjE2NDEyNzE2MDQsImV4cCI6MTY0MTI4NjAwNH0.Td29-OPNR9UtVb8ZPJrS2UFCWSqtbavOZVTqX6JbDFc",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8088/api/eventos/61d3caacc8a9f60468ddd36b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"eventos",
+						"61d3caacc8a9f60468ddd36b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Participantes - POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Francisco\",\n    \"apellido\": \"Giannico\",\n    \"apodo\": \"Bicha\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/participantes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"participantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login - POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"correo\": \"hebera20@gmail.com\",\n    \"password\": \"Celeste\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eventos - POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Mascara exfoliante\",\n    \"descripcion\": \"Pajin decide inmiscuirse en el mundo metrosexual\",\n    \"participante\": \"61d3c24098d32a1bd0e554ed\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eventos - POST Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MWQxNTA3MTdjOWRjOTQ2YWNkNTRlZGYiLCJpYXQiOjE2NDEyNzE2MDQsImV4cCI6MTY0MTI4NjAwNH0.Td29-OPNR9UtVb8ZPJrS2UFCWSqtbavOZVTqX6JbDFc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Enano Traidor\",\n    \"descripcion\": \"Invitando a las novias a clandestinas y no a sus amigos MDTCHNCH\",\n    \"participante\": \"61d3c24098d32a1bd0e554ed\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/eventos/61d3cb41c8a9f60468ddd36f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"eventos",
+						"61d3cb41c8a9f60468ddd36f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
